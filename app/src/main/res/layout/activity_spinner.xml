@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.exercicioGazeta.view.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:text="@string/to_do"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="Telefone"
+                android:inputType="date"
+                android:minHeight="48dp" />
+
+
+            <EditText
+                android:id="@+id/descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="Nome do curso"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+
+            <EditText
+                android:id="@+id/gasolina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="Nome do aluno"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etanol"
+                android:layout_width="213dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="Sobrenome"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Selecione um curso"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="210dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="32dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botaoLimpar"
+                    android:layout_width="110dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="#0040FF"
+                    android:hint="@string/text_hint_edit_Limpar"
+                    android:textColorHint="#000000"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/Calcular"
+                    android:layout_width="115dp"
+                    android:layout_height="59dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="#1100FF"
+                    android:hint="@string/text_hint_edit_Salvar"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#4860FF"
+                    android:textColorHint="#000000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+                <Button
+                    android:id="@+id/botaoFinalizar"
+                    android:layout_width="262dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="#0339FB"
+                    android:hint="@string/text_hint_edit_Finalizar"
+                    android:textColor="#3B3EDC"
+                    android:textColorHighlight="#1823F4"
+                    android:textColorHint="#000000"
+                    android:textColorLink="#121DEF"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

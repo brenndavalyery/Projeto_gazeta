@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.GazetaActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gasolina X Etanol"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <Button
+        android:id="@+id/botaoFinalizar"
+        android:layout_width="258dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF0000"
+        android:hint="@string/text_hint_edit_Finalizar"
+        android:textColor="#3B3EDC"
+        android:textColorHighlight="#1823F4"
+        android:textColorHint="#000000"
+        android:textColorLink="#121DEF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <Button
+        android:id="@+id/Calcular"
+        android:layout_width="254dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FF0000"
+        android:hint="@string/text_hint_edit_Calcular"
+        android:onClick="calcular"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#4860FF"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/botaoLimpar"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <Button
+        android:id="@+id/botaoLimpar"
+        android:layout_width="260dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#FF0000"
+        android:hint="@string/text_hint_edit_Limpar"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/resultado"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="254dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FF0000"
+        android:enabled="false"
+        android:hint="Salvar"
+        android:text="Salvar"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/Calcular"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Resultado"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etanol" />
+
+    <EditText
+        android:id="@+id/etanol"
+        android:layout_width="213dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Valor do etanol"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gasolina" />
+
+    <EditText
+        android:id="@+id/gasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Valor da gasolina"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ScrollView
+        android:layout_width="436dp"
+        android:layout_height="48dp"
+        android:background="#FF0000"
+        android:backgroundTint="#FD0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">exercicioGazeta</string>
+    <string name="text_hint_edit_Limpar">Limpar</string>
+    <string name="to_do">Cursos</string>
+    <string name="text_hint_edit_Salvar">Salvar</string>
+    <string name="text_hint_edit_Finalizar">Finalizar</string>
+    <string name="text_hint_edit_Calcular">Calcular</string>
+</resources>
